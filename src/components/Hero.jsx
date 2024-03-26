@@ -3,7 +3,7 @@ import banner from '../assets/banner.png'
 
 const Hero = () => {
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] h-[50vh] mx-auto bg-black'>
+    <div className='grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] h-[50vh] mx-auto '>
         <div className="col-span-1 my-auto mx-auto w-[300px] lg:w-[400px]">
             <img src={banner} alt="banner image" className='w-[360px]'/>
         </div>
