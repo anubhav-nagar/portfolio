@@ -7,7 +7,7 @@ const Navbar = () => {
     setNavbarBtn(!navbarBtn);
   }
   return (
-    <div className='text-slate-100 h-[80px] max-w-[1200px] mx-auto flex justify-between items-center '>
+    <div className='text-slate-400 h-[80px] max-w-[1200px] mx-auto flex justify-between items-center '>
       <h1 className='text-3xl font-bold primary-color ml-4 mt-2'>Anubhav Nagar</h1>
       <ul className="hidden md:flex">
         <li className="p-5"><a href='#about'>About</a></li>
