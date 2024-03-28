@@ -11,12 +11,17 @@ const Hero = () => {
     };
     
     const handleDownload = () => {
+      try{
         const downloadLink = document.createElement('a');
         downloadLink.href = cv; // Update the path to your CV file
-        downloadLink.download = 'cv.pdf'; // Set the downloaded file name
+        downloadLink.download = 'cv'; // Set the downloaded file name
         document.body.appendChild(downloadLink);
         downloadLink.click();
         document.body.removeChild(downloadLink);
+        return false;
+      } catch (error) {
+        console.error('Error downloading CV:', error)
+      }
     };
 
   return (
