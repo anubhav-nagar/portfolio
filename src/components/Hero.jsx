@@ -12,6 +12,7 @@ const Hero = () => {
     
     const handleDownload = () => {
       try{
+        event.preventDefault();
         const downloadLink = document.createElement('a');
         downloadLink.href = cv; // Update the path to your CV file
         downloadLink.download = 'cv'; // Set the downloaded file name
