@@ -1,5 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import banner from "../assets/banner.png";
+import cv from "../assets/cv.pdf"
 import { useContext } from "react";
 import { ScrollContext } from "../App";
 
@@ -11,7 +12,7 @@ const Hero = () => {
     
     const handleDownload = () => {
         const downloadLink = document.createElement('a');
-        downloadLink.href = '../assets/cv.pdf'; // Update the path to your CV file
+        downloadLink.href = cv; // Update the path to your CV file
         downloadLink.download = 'cv.pdf'; // Set the downloaded file name
         document.body.appendChild(downloadLink);
         downloadLink.click();
