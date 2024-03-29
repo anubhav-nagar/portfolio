@@ -3,7 +3,7 @@ import { CiCalendarDate } from "react-icons/ci";
 
 const Experience = () => {
   return (
-    <div className="max-w-[1200px] mt-12 mx-6 md:mx-auto">
+    <div className="max-w-[1200px] mx-6 md:mx-12 lg:mx-auto">
       <div className="text-3xl font-bold primary-color ">Work Experience</div>
       <div className="flex items-start mb-6 max-w-[1000px] mx-auto mt-8">
         <div className="w-1/12 flex items-center">

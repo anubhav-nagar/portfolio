@@ -3,8 +3,9 @@ import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import Links from "./components/Links";
 import { createContext, useState } from "react";
+import Skills from "./components/Skills";
 export const ScrollContext = createContext();
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <ScrollContext.Provider value={{ scrollToBottom, setScrollToBottom }}>
       <div>
         <Navbar />
+        <Links />
         <Hero />
         <Experience />
         <Projects />

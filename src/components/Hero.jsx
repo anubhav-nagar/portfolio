@@ -3,6 +3,9 @@ import banner from "../assets/banner.png";
 import cv from "../assets/cv.pdf"
 import { useContext } from "react";
 import { ScrollContext } from "../App";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 
 const Hero = () => {
     const { setScrollToBottom } = useContext(ScrollContext);
@@ -26,7 +29,7 @@ const Hero = () => {
     };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] h-auto mx-auto ">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] h-auto mx-auto my-8 md:my-40 ">
       <div className="col-span-1 my-auto mx-auto w-[300px] lg:w-[400px]">
         <img src={banner} alt="banner image" className="w-[360px]" />
       </div>
@@ -51,8 +54,7 @@ const Hero = () => {
             className="px-6 py-3 w-full rounded-xl mr-4 bg-gradient-to-br from-orange-500 to-pink-500 text-white"
             onClick={handleDownload}
           >
-            {" "}
-            Download CV{" "}
+            Download CV
           </a>
           <a
             href="#contact"
@@ -61,6 +63,11 @@ const Hero = () => {
           >
             Contact
           </a>
+          <div className="flex lg:hidden mt-10">
+          <div className="inline-flex align-bottom text-slate-200 ml-8 mr-6 transform hover:scale-x-[-1] duration-300"><a href="https://github.com/anubhav-nagar"><FaGithub size={25} /></a></div>
+          <div className="inline-flex align-bottom text-slate-200 mr-6 transform hover:scale-x-[-1] duration-300"><a href="https://github.com/anubhav-nagar"><FaLinkedin size={25} /></a></div>
+          <div className="inline-flex align-bottom text-slate-200 mr-6 transform hover:scale-x-[-1] duration-300"><a href="https://github.com/anubhav-nagar"><FiMail size={25} /></a></div>
+          </div>
         </div>
       </div>
     </div>
